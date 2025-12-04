@@ -126,3 +126,55 @@ body {
     padding: 10px;
     background-color: #222222;
 }
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+
+    .game-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-buttons button {
+        margin-bottom: 10px;
+    }
+
+    .game-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-type button {
+        margin-bottom: 10px;
+    }
+
+    .game-levels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-levels button {
+        margin-bottom: 10px;
+    }
+
+    .game-tables {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
