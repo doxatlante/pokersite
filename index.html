@@ -3,55 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eazy Poker</title>
+    <title>TON Poker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Шапка -->
     <header class="header">
-        <h1>Eazy Poker</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#rules">Правила игры</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+        <h1>TON Poker</h1>
+        <div class="user-info">
+            <div class="avatar">NN</div>
+            <div class="balance">$0.00</div>
+        </div>
     </header>
-    
-    <!-- Основное содержание -->
+
     <main>
-        <section id="about">
-            <h2>Добро пожаловать!</h2>
-            <p>Мы рады приветствовать вас на сайте Eazy Poker.</p>
+        <section class="game-section">
+            <div class="game-buttons">
+                <button class="deposit">Депозит</button>
+                <button class="withdraw">Вывод</button>
+            </div>
+            <div class="game-info">
+                <p>Время на задание: 6д 23ч</p>
+                <p>Играть 10 рук, получить $1</p>
+                <p>0/10 рук</p>
+            </div>
         </section>
-        
-        <section id="rules">
-            <h2>Правила игры</h2>
-            <ol>
-                <li>Цель игры — собрать лучшую комбинацию карт.</li>
-                <li>Игра начинается с раздачи двух карманных карт каждому игроку.</li>
-                <li>Игроки делают ставки и играют раунды торговли.</li>
-            </ol>
-        </section>
-        
-        <section id="contact">
-            <h2>Свяжитесь с нами</h2>
-            <form action="#" method="post">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name"><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
-                
-                <button type="submit">Отправить</button>
-            </form>
+
+        <section class="game-options">
+            <div class="game-type">
+                <button class="selected">Техасский холдем</button>
+                <button>Пот лимит омаха</button>
+            </div>
+            <div class="game-levels">
+                <button class="selected">Low</button>
+                <button>Mid</button>
+                <button>VIP</button>
+            </div>
+            <div class="game-tables">
+                <div class="table">
+                    <p>Блайнды: $0.02 / $0.05</p>
+                    <p>Бай-ин: $2.50</p>
+                    <p>6 MAX</p>
+                    <p>x2</p>
+                    <button class="fast">FAST</button>
+                </div>
+                <div class="table">
+                    <p>Блайнды: $0.05 / $0.10</p>
+                    <p>Бай-ин: $25.00</p>
+                    <p>4 MAX</p>
+                    <p>x2</p>
+                    <button class="play">Играть</button>
+                </div>
+                <div class="table">
+                    <p>Блайнды: $0.05 / $0.10</p>
+                    <p>Бай-ин: $25.00</p>
+                    <p>6 MAX</p>
+                    <p>x2</p>
+                    <button class="play">Играть</button>
+                </div>
+                <div class="table">
+                    <p>Блайнды: $0.10 / $0.25</p>
+                    <p>Бай-ин: $62.50</p>
+                    <p>4 MAX</p>
+                    <p>x2</p>
+                    <button class="play">Играть</button>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <!-- Подвал -->
+
     <footer class="footer">
-        <p>© 2025 Eazy Poker</p>
+        <p>© 2025 TON Poker</p>
     </footer>
 </body>
 </html>

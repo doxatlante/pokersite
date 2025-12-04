@@ -1,74 +1,128 @@
-/* Основные стили */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-.header h1 {
-    text-align: center;
-    color: white;
-    background-color: #4CAF50;
-    padding: 1em;
+.header {
+    background-color: #222222;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    padding: 0;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    transition: color .3s ease-in-out;
+.balance {
+    font-size: 18px;
 }
 
-nav a:hover {
-    color: #4CAF50;
-}
-
-main section {
-    max-width: 800px;
-    margin: auto;
+.game-section {
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
+.game-buttons button {
     background-color: #4CAF50;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-form label,
-form input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+.game-info {
+    margin-top: 20px;
 }
 
-form button {
+.game-options {
+    padding: 20px;
+}
+
+.game-type button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.game-type button.selected {
+    background-color: #3e8e41;
+}
+
+.game-levels button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.game-levels button.selected {
+    background-color: #3e8e41;
+}
+
+.game-tables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.table {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.table p {
+    margin: 5px 0;
+}
+
+.table button {
     background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
+    width: 100%;
 }
 
-form button:hover {
-    background-color: #3e8e41;
+.table button.fast {
+    background-color: #ffc107;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222222;
 }
